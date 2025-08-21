@@ -2,22 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/campcamplogo.png" />
     <link href="/src/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Camp Camp</title>
   </head>
   <body>
-    <div class="primary-bg">
-      <div class="border-2 border-black">
-      <h1>Camp Camp</h1>
-      <h3>
-      a celebration of art, music
-and camp on Cayuga Lake
-      </h3>
-      <p>September 5-7</p>
-      <p>Camp Gregory, Aurora, NY</p>
+    <div class="p-6">
+      <div class="grid grid-cols-1">
+        <div class="border-2 border-black">
+          <img src="./campcamplogo.png" class="logo" alt="Camp camp logo" />
+        </div>
+        <div class="bg-[url(/waves.jpg)] p-6 border-2 border-black md:w-full">
+          <p class="text-4xl p-5">
+            a celebration of art, music
+            and camp on Cayuga Lake
+          </p>
+        </div>
+        <div class="border-2 border-black p-3 text-3xl">
+          <p>
+            September 5-7 <br> 
+            Fri-Sun
+          </p>
+          <br>
+          <p>
+            Camp Gregory, <br>
+            Aurora, NY
+          </p>
+        </div>
+        <div class="border-2 border-black p-3">
+          <p class="text-xl">42°42'31.82"N 76°41'54.42"W</p>
+        </div>
+        <div>
+          <ul>
+            <li class="border-2 border-black p-3 text-xl">SCHEDULE</li>
+            <li class="border-2 border-black p-3 text-xl">MAP</li>
+            <li class="border-2 border-black p-3 text-xl">FAQs</li>
+          </ul>
+        </div>
       </div>
+
+
 
       <div id="app"></div>
     </div>

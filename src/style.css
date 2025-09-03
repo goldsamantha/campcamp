@@ -48,7 +48,7 @@ h1 {
 }
 
 .logo {
-  height: 20em;
+  max-height: 20em;
   padding: 1.5em;
   margin: 0 auto
 }

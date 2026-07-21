@@ -4,7 +4,6 @@ import campCampLogo from '/campcamplogo.png'
 import Toggle from './Toggle'
 import Schedule from './blocks/Schedule'
 import FAQ from './blocks/FAQ'
-import Transportation from './blocks/Transportation'
 // import './App.css'
 
 function App() {
@@ -40,9 +39,6 @@ function App() {
 
           <div className="border-x-2 border-b-2 w-full p-6 text-2xl">
             <FAQ />
-          </div>
-          <div className="border-x-2 border-b-2 w-full p-6 text-2xl">
-            <Transportation />
           </div>
         </div>
 

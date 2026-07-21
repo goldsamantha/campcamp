@@ -11,15 +11,14 @@ const Schedule = () => {
     <thead>
       <tr>
         <th className="row-header freezebar-origin-ltr"></th>
-        <th id="788025806C0" className="column-headers-background">A</th>
-        <th id="788025806C1"  className="column-headers-background">B</th>
-        <th id="788025806C2" className="column-headers-background">C</th>
+        <th id="788025806C0" className="column-headers-background">Time</th>
+        <th id="788025806C1"  className="column-headers-background">Activity</th>
+        <th id="788025806C2" className="column-headers-background">Location</th>
       </tr>
     </thead>
     <tbody>
       <tr  >
         <th id="788025806R0"   className="row-headers-background">
-          <div className="row-header-wrapper"  >1</div>
         </th>
         <td className="s0" dir="ltr">Thursday 9/10</td>
         <td className="s1"></td>
@@ -27,7 +26,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R1"   className="row-headers-background">
-          <div className="row-header-wrapper"  >2</div>
         </th>
         <td className="s2" dir="ltr">Morning</td>
         <td className="s3"></td>
@@ -35,7 +33,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R2"   className="row-headers-background">
-          <div className="row-header-wrapper"  >3</div>
         </th>
         <td className="s2" dir="ltr">Afternoon</td>
         <td className="s2" dir="ltr">Arrivals</td>
@@ -43,7 +40,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R3"   className="row-headers-background">
-          <div className="row-header-wrapper"  >4</div>
         </th>
         <td className="s2" dir="ltr">Evening</td>
         <td className="s2" dir="ltr">🍽️ Dinner<br />🔥 Music / Performances by the fire<br />🍡 Smore’sgasburg – sweet and
@@ -52,7 +48,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R4"   className="row-headers-background">
-          <div className="row-header-wrapper"  >5</div>
         </th>
         <td className="s4" dir="ltr">Friday 9/11</td>
         <td className="s5"></td>
@@ -60,7 +55,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R5"   className="row-headers-background">
-          <div className="row-header-wrapper"  >6</div>
         </th>
         <td className="s2" dir="ltr">Morning</td>
         <td className="s2" dir="ltr">🍽️ Breakfast<br />Late Arrivals</td>
@@ -68,7 +62,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R6"   className="row-headers-background">
-          <div className="row-header-wrapper"  >7</div>
         </th>
         <td className="s2" dir="ltr">Afternoon</td>
         <td className="s2" dir="ltr">🍽️ sandwich lunch<br />🐟 Swimming<br />🌸 Botanical print start<br />🤡 Puppet making<br />🎨
@@ -77,7 +70,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R7"   className="row-headers-background">
-          <div className="row-header-wrapper"  >8</div>
         </th>
         <td className="s2" dir="ltr">Evening</td>
         <td className="s4" dir="ltr">🍽️ Dinner <br />🎸 Music and lightweight visual showcase on the lake (rain location
@@ -86,7 +78,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R8"   className="row-headers-background">
-          <div className="row-header-wrapper"  >9</div>
         </th>
         <td className="s4" dir="ltr">Saturday 9/12</td>
         <td className="s5"></td>
@@ -94,7 +85,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R9"   className="row-headers-background">
-          <div className="row-header-wrapper"  >10</div>
         </th>
         <td className="s2" dir="ltr">Morning</td>
         <td className="s2" dir="ltr">🍽️ Breakfast</td>
@@ -102,7 +92,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R10"   className="row-headers-background">
-          <div className="row-header-wrapper"  >11</div>
         </th>
         <td className="s2" dir="ltr">Afternoon</td>
         <td className="s3" dir="ltr">🍽️ Sandwich lunch<br />🐟 Swimming<br />🌸 Botanical print day 2<br />🤡 Puppet making<br />🎨
@@ -111,7 +100,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R11"   className="row-headers-background">
-          <div className="row-header-wrapper"  >12</div>
         </th>
         <td className="s2" dir="ltr">Evening</td>
         <td className="s2" dir="ltr">🍽️ Dinner<br />🎸 Party/DJ sets</td>
@@ -119,7 +107,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R12"   className="row-headers-background">
-          <div className="row-header-wrapper"  >13</div>
         </th>
         <td className="s4" dir="ltr">Sunday 9/13</td>
         <td className="s5"></td>
@@ -127,7 +114,6 @@ const Schedule = () => {
       </tr>
       <tr  >
         <th id="788025806R13"   className="row-headers-background">
-          <div className="row-header-wrapper"  >14</div>
         </th>
         <td className="s2" dir="ltr">Morning</td>
         <td className="s2" dir="ltr">🍽️ Breakfast<br />Leave</td>

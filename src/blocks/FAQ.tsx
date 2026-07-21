@@ -37,7 +37,7 @@ Camp Camp is choose your own adventure, while you can attend any of the events o
           <p className="text-base pb-4">
             We will have rustic bunk bed cabins so think of anything you might need for a kids camp weekend: a bathing suit for end of summer lake dips, a sleeping bag, sunscreen. Use the following list:
           </p>
-          <ul className="list-disc pl-6">
+          <ul className="list-disc pl-6 text-base">
             <li>Sleeping bag, pillow</li>
             <li>Towel, toiletries </li>
             <li>Bathing suit </li>

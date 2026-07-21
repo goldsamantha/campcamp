@@ -31,6 +31,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -118,6 +119,11 @@ button:focus-visible {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
+}
+
+.hero {
+  max-width: 800px;
+  aspect-ratio: 1;
 }
 
 .hero-border {

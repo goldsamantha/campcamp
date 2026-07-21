@@ -31,7 +31,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -104,4 +103,27 @@ button:focus-visible {
 
 .primary-bg {
   background-color: #b32323;
+}
+
+.circle-mask {
+  mask-image: radial-gradient(black 70%, transparent 30%);
+  width: 800px;
+  height: 800px;
+  object-fit: cover;
+}
+
+.camp-camp-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+.hero-border {
+  width: 793px;
+  height: 793px;
+  max-width: 100%;
+  display: block;
+  position: absolute;
 }

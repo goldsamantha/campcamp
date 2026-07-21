@@ -36,22 +36,21 @@ Camp Camp is choose your own adventure, while you can attend any of the events o
           </p>
           <p className="text-base pb-4">
             We will have rustic bunk bed cabins so think of anything you might need for a kids camp weekend: a bathing suit for end of summer lake dips, a sleeping bag, sunscreen. Use the following list:
-
-            <ul className="list-disc pl-6">
-              <li>Sleeping bag, pillow</li>
-              <li>Towel, toiletries </li>
-              <li>Bathing suit </li>
-              <li>Headlamp and/or flashlight </li>
-              <li>warm socks, sweatshirt, and jammies for cool nights </li>
-              <li>Rain shell in case </li>
-              <li>(optional) Washed cotton/wool to dye with indigo </li>
-              <li>(optional) camping chair to pull up by the fire and/or hammock </li>
-              <li>BYOB – we will have plenty of food for meals and snacking, and a variety of beverages but feel free to bring your own </li>
-              as well and we can store in the industrial fridge
-              <li>A piece of art that you want to show! We can accommodate outdoor and indoor art! Reach out to Goldsam individually if </li>
-              you want to install something!
-            </ul>
           </p>
+          <ul className="list-disc pl-6">
+            <li>Sleeping bag, pillow</li>
+            <li>Towel, toiletries </li>
+            <li>Bathing suit </li>
+            <li>Headlamp and/or flashlight </li>
+            <li>warm socks, sweatshirt, and jammies for cool nights </li>
+            <li>Rain shell in case </li>
+            <li>(optional) Washed cotton/wool to dye with indigo </li>
+            <li>(optional) camping chair to pull up by the fire and/or hammock </li>
+            <li>BYOB – we will have plenty of food for meals and snacking, and a variety of beverages but feel free to bring your own </li>
+            as well and we can store in the industrial fridge
+            <li>A piece of art that you want to show! We can accommodate outdoor and indoor art! Reach out to Goldsam individually if </li>
+            you want to install something!
+          </ul>
         </div>
       </Toggle>
     </div>

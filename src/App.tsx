@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import heroImg from '/assets/shader1.jpg'
 import campCampLogo from '/campcamplogo.png'
+import Toggle from './Toggle'
 // import './App.css'
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <div className="border-2 w-full p-6">
             <p className="text-5xl"> a celebration of art, music, and camp</p>
           </div>
-          <div className="border-x-2 border-b-2 w-full p-6 text-xl">
+          <div className="border-x-2 border-b-2 w-full p-6 text-2xl">
             <p>September 10 - 13</p>
             <p>Thurs - Sun</p>
             <br />
@@ -29,19 +30,22 @@ function App() {
             <p>Aurora, NY</p>
           </div>
 
-          <div className="border w-full">
-            Schedule
+          <div className="border-x-2 border-b-2 w-full p-6 text-2xl">
+            <Toggle title="Schedule">
+              i am the schedule content
+            </Toggle>
           </div>
-          <div className="border w-full">
-            Map
+          <div className="border-x-2 border-b-2 w-full p-6 text-2xl">
+            <Toggle title="FAQs">
+              i am the schedule content
+            </Toggle>
           </div>
-          <div className="border w-full">
-            FAQs
+          <div className="border-x-2 border-b-2 w-full p-6 text-2xl">
+            <Toggle title="Map">
+              i am the schedule content
+            </Toggle>
           </div>
-
-
         </div>
-
 
       </div>
     </>

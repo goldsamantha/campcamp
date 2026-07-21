@@ -1,13 +1,10 @@
-import { useState } from 'react'
 import heroImg from '/assets/shader1.jpg'
 import campCampLogo from '/campcamplogo.png'
-import Toggle from './Toggle'
 import Schedule from './blocks/Schedule'
 import FAQ from './blocks/FAQ'
 // import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

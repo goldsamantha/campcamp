@@ -16,7 +16,7 @@ const Toggle = ({title, children}: ToggleType) => {
           {title}
         </div>
         <button
-          onClick={(e) => setIsOpen(!isOpen)} aria-label="change toggle">
+          onClick={() => setIsOpen(!isOpen)} aria-label="change toggle">
           <DownArrowSvg className={isOpen ? "rotate-180" : ""} />
         </button>
       </div>

@@ -123,14 +123,24 @@
           
 
   void main () {
-    vec2 st = gl_FragCoord.xy/resolution.xy;
+    // uv is gl-react's built-in 0->1 varying; using it avoids retina
+    // pixel-ratio tiling that gl_FragCoord/resolution would introduce.
+    vec2 st = uv;
 
-    vec2 st_c1_i0 = st;
-         
-         vec4 c1_i0 = src(st_c1_i0, tex1);
-         
-         vec4 c = src(st, tex0);
-         c = blend(c, c1_i0, 0.5);
+    // 1. sample the image input (public/assets/shader1.jpg -> tex0)
+    vec4 img = src(st, tex0);
+
+    // 2. animated simplex noise field, remapped from [-1,1] to [0,1]
+    float n = _noise(vec3(st * 3.0, time * 0.2));
+    n = n * 0.5 + 0.5;
+
+    // 3. turn the noise into a groovy color band via hsv
+    vec3 noiseColor = _hsvToRgb(vec3(fract(n + time * 0.05), 0.6, n));
+    vec4 noiseTex = vec4(noiseColor, 1.0);
+
+    // 4. blend the noise over the image
+    vec4 c = blend(img, noiseTex, 0.5);
+
     gl_FragColor = c;
   }
   

@@ -18,14 +18,16 @@
     "vite": "^8.1.5"
   },
   "dependencies": {
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "tailwindcss": "^4.3.3",
     "@tailwindcss/vite": "^4.3.3",
     "@vitejs/plugin-react": "^6.0.3",
     "gl-react": "^6.0.0",
     "gl-react-dom": "^6.0.0",
-    "vite-plugin-svgr": "^5.2.0",
-    "vite-plugin-glsl": "^1.6.0"
+    "glsl-voronoi-noise": "^1.2.2",
+    "glslify": "^7.1.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "tailwindcss": "^4.3.3",
+    "vite-plugin-glsl": "^1.6.0",
+    "vite-plugin-svgr": "^5.2.0"
   }
 }

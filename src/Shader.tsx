@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Shaders, Node, GLSL } from  'gl-react';
 import { Surface } from 'gl-react-dom'; // or 'gl-react-native'
 
@@ -8,15 +8,6 @@ import shader1 from './shaders/shader1.frag';
 
 
 const shaders = Shaders.create({
-  helloBlue: {
-    frag: GLSL`
-precision highp float;
-varying vec2 uv;
-uniform float blue;
-void main() {
-  gl_FragColor = vec4(uv.x, uv.y, blue, 1.0);
-}`
-  },
   colorGrad: {
     frag: GLSL`${colorGrad}`,
     // resources:{
@@ -28,57 +19,44 @@ void main() {
   }
 });
 
-class HelloBlue extends React.Component {
-  render() {
-    const { blue } = this.props;
-    return <Node
-      shader={shaders.helloBlue}
-      uniforms={{ blue }}
-    />;
-  }
+
+// useAnimationTime returns elapsed seconds, ticked each animation frame.
+function useAnimationTime(): number {
+  const [time, setTime] = useState(0);
+  const start = useRef<number | null>(null);
+
+  useEffect(() => {
+    let raf = 0;
+    const loop = (now: number) => {
+      if (start.current === null) start.current = now;
+      setTime((now - start.current) / 1000);
+      raf = requestAnimationFrame(loop);
+    };
+    raf = requestAnimationFrame(loop);
+    return () => cancelAnimationFrame(raf);
+  }, []);
+
+  return time;
 }
 
+// 3. Create your gl-react Component: animated noise blended with the image input.
+const SIZE = 800;
 
-// 2. Define the shader using gl-react Shaders.create
-// const shaders = Shaders.create({
-//   colorGrad: {
-//     frag: GLSL`${colorGrad}`, // Pass the imported string here
-//     resources:{
-//       u_resolution: { value: [window.innerWidth, window.innerHeight], type: "vec2<f32>" } 
-//     }
-//   },
-// });
-
-// 3. Create your gl-react Component
 const ColorGradShader: React.FC = ()  => {
+    const time = useAnimationTime();
+
     return (
-      <Surface width={800} height={800}>
-        {/* <HelloBlue blue={0.5} /> */}
-        <Node 
+      <Surface width={SIZE/2} height={SIZE/2} className="circle-mask">
+        <Node
           shader={shaders.shader1}
           uniforms={{
-            // probably need to useRef tho...
-            // u_resolution: [window.innerWidth ?? 300, window.innerHeight ?? 300],
-            resolution: [800, 800],
-            tex0: './assets/shader1.jpg',
-            tex1: './assets/shader1.jpg',
-            // tex1: './waves.jpg'
-            // u_resolution: { value: new Float32Array([window.innerWidth, window.innerHeight]), type: "vec2<f32>" } 
+            time,
+            tex0: '/assets/shader1.jpg',
           }}
         />
-        {/* <Node shader={shaders.helloBlue} /> */}
       </Surface>
     );
 }
 
-// class MyShaderComponent extends React.Component {
-//   render() {
-//     return (
-//       <Surface width={400} height={400}>
-//         <Node shader={shaders.myCustomShader} />
-//       </Surface>
-//     );
-//   }
-// }
 
 export default ColorGradShader;
